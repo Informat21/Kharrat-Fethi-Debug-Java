@@ -14,17 +14,16 @@ import java.util.Map;
  * Ensuite elle va compter le nombre de chaque symptôme
  * Enfin elle va écrire les résultats dans un fichier de sortie result.out
  */
-
 public class AnalyticsCounter {
 	/**
 	 * Lecture des symptômes
 	 * Comptage des occurences de chaque symptôme
 	 * Affichage des résultats dans la console
-	 * Ecriture des résultata dans un fichier
+	 * Ecriture des résultats dans un fichier
 	 * @param args
 	 * @throws Exception si une erreur intervient
 	 */
-	public static void main(String args[]) throws Exception {
+	public static void main(String args[]) {
 
 		//Lecture des symptômes
 		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile ("symptoms.txt");
@@ -42,8 +41,5 @@ public class AnalyticsCounter {
 		// Ecriture des résultats dans le fichier result.out
 		WriteSymptomDataToFile writer = new WriteSymptomDataToFile();
 		writer.writeSymptoms(symptomsCounts);
-
-
 	}
-
 }

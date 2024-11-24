@@ -9,7 +9,6 @@ import java.util.TreeMap;
  * La classe SymptomCount sert à compter le nombre d'occurences pour chaque symptôme
  * Les résultats sont stockés dans une TreeMap afin qu'ils soient triés par ordre alphabétique
  */
-
 public class SymptomCount {
 
     /**
@@ -18,7 +17,6 @@ public class SymptomCount {
      * @param symptoms
      * @return
      */
-
     public Map<String, Integer> SymptomCount (List<String> symptoms) {
 
         // Déclarer un map pour stocker les symptômes et leurs occurrences
@@ -30,8 +28,7 @@ public class SymptomCount {
 
             // Incrémenter le compteur pour chaque symptôme dans la Map
             symptomsCounts.put(symptom, symptomsCounts.getOrDefault( symptom, 0) + 1);
-
         }
-return symptomsCounts;
+        return symptomsCounts;
     }
 }

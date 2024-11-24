@@ -8,7 +8,6 @@ import java.util.Map;
  * La classe WriteSymptomDataToFile va écrire les symptômes et leur quantité dans un fichier texte result.out
  * Elle implémente l'interface ISymptomWriter
  */
-
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
     /**
@@ -16,7 +15,6 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      * création du fichier de sortie result.out
      * @param symptoms
      */
-
     @Override
     public void writeSymptoms(Map<String, Integer> symptoms) {
 
@@ -32,7 +30,6 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
             }
         } catch (IOException e) {
             e.printStackTrace();
-
         }
     }
 }
